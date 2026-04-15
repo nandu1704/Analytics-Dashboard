@@ -489,7 +489,7 @@ function BondSection({ view, onViewChange }) {
                   const rowSelected = selectedRow === row.asset;
                   return (
                     <TableRow key={row.asset} hover onClick={() => setSelectedRow(row.asset)} sx={{ backgroundColor: rowSelected ? "rgba(245,158,11,0.10)" : rowIndex % 2 === 0 ? rowEven : rowOdd, '& td': { borderBottom: `1px solid ${border}` } }}>
-                      <TableCell sx={{ position: "sticky", left: 0, zIndex: 2, backgroundColor: rowSelected ? "rgba(245,158,11,0.10)" : rowIndex % 2 === 0 ? rowEven : rowOdd, color: text, minWidth: 90, width: 90, py: 0.5 }}>{row.asset}</TableCell>
+                      <TableCell sx={{ position: "sticky", left: 0, zIndex: 2, backgroundColor: rowSelected ? "rgba(245,158,11,0.10)" : rowIndex % 2 === 0 ? rowEven : rowOdd, color: text, minWidth: 70, width: 70, py: 0.5 }}>{row.asset}</TableCell>
                       {tableColumns.map((column) => {
                         const selected = selectedCell?.asset === row.asset && selectedCell?.column === column;
                         return (
